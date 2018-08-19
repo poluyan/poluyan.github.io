@@ -159,8 +159,8 @@ pre {
   margin-right: 20px; }
 
 .svg-icon:hover {
-  fill: red;
-  transform: scale(1.25);
+  fill: #0366D6;
+  transform: scale(1.1);
   transition-duration: 200ms; }
 
 .sss {
