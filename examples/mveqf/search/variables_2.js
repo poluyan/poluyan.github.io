@@ -1,0 +1,5 @@
+var searchData=
+[
+  ['children_455',['children',['../structmveqf_1_1mfsa_1_1Node.html#a785566f2f3e84a547481bf4b7d4c19e6',1,'mveqf::mfsa::Node::children()'],['../structmveqf_1_1trie__based_1_1TrieNode.html#a3a6797bffce7391b246b068fe63304c9',1,'mveqf::trie_based::TrieNode::children()']]],
+  ['count_456',['count',['../structmveqf_1_1trie__based_1_1invect.html#a9ff31f77f21699cbaeee88af106bfdc1',1,'mveqf::trie_based::invect::count()'],['../classmveqf_1_1kde_1_1KDE.html#a2845a003576c2e3d87a0fb9a71c174c8',1,'mveqf::kde::KDE::count()'],['../classmveqf_1_1kquantile_1_1Qkde.html#a020c59ac9762fe37218a1d93fd5d042c',1,'mveqf::kquantile::Qkde::count()'],['../structmveqf_1_1mfsa_1_1Node.html#a906f647b4e32db2ad70e7121e1eafb6c',1,'mveqf::mfsa::Node::count()'],['../structmveqf_1_1trie__based_1_1NodeCount.html#a3a62353ed72b62f277dffd8abdda9ea7',1,'mveqf::trie_based::NodeCount::count()'],['../structmveqf_1_1trie__based_1_1NodeCountInverse.html#a0edddb7317962ea87464af46d9b2f4e8',1,'mveqf::trie_based::NodeCountInverse::count()']]]
+];
