@@ -1,0 +1,72 @@
+<!doctype html>
+<html>
+<body>
+	<head>
+		<meta charset="utf-8">
+		<title>Варианты по дисциплине Дифференциальные уравнения в прикладных задачах</title>
+	</head>
+        <p>Введите Вашу почту в домене @uni-dubna.ru</p>
+	<input name="searchTxt" type="text" placeholder="example@uni-dubna.ru" maxlength="50" size="30" id="searchTxt" class="searchField"/>
+        <script src="/function.js"></script>
+	<script type="module">
+	function isASCII(str)
+	{
+		return /^[\x00-\x7F]*$/.test(str);
+	}
+	
+	Module.onRuntimeInitialized = _ => {
+		document.addEventListener('keyup', function (e)
+		{
+				const obj = new Module.Counter();
+				var str = document.getElementById("searchTxt").value;
+				if(str.length > 12 && isASCII(str)) {
+					if(obj.exists(str) === true){
+						document.getElementById("zz").innerHTML = obj.name() + ", Ваши варианты: ";
+						document.getElementById("z11").innerHTML = "1.1: " + obj.z11().toString();
+						document.getElementById("z12").innerHTML = "1.2: " + obj.z12().toString();
+						document.getElementById("z21").innerHTML = "2.1: " + obj.z21().toString();
+						document.getElementById("z22").innerHTML = "2.2: " + obj.z22().toString();
+						document.getElementById("z31").innerHTML = "3.1: " + obj.z31().toString();
+						document.getElementById("z32").innerHTML = "3.2: " + obj.z32().toString();
+						document.getElementById("z41").innerHTML = "4.1: " + obj.z41().toString();
+						document.getElementById("z42").innerHTML = "4.2: " + obj.z42().toString();
+					}
+					else
+					{
+						document.getElementById("zz").innerHTML = "Почта не найдена!";
+						document.getElementById("z11").innerHTML = "";
+						document.getElementById("z12").innerHTML = "";
+						document.getElementById("z21").innerHTML = "";
+						document.getElementById("z22").innerHTML = "";
+						document.getElementById("z31").innerHTML = "";
+						document.getElementById("z32").innerHTML = "";
+						document.getElementById("z41").innerHTML = "";
+						document.getElementById("z42").innerHTML = "";
+					}
+				}
+					else
+					{
+						document.getElementById("zz").innerHTML = "Почта не найдена!";
+						document.getElementById("z11").innerHTML = "";
+						document.getElementById("z12").innerHTML = "";
+						document.getElementById("z21").innerHTML = "";
+						document.getElementById("z22").innerHTML = "";
+						document.getElementById("z31").innerHTML = "";
+						document.getElementById("z32").innerHTML = "";
+						document.getElementById("z41").innerHTML = "";
+						document.getElementById("z42").innerHTML = "";
+					}
+		});
+	};
+	</script>
+	<p id="zz"></p>
+	<p id="z11"></p>
+	<p id="z12"></p>
+	<p id="z21"></p>
+	<p id="z22"></p>
+	<p id="z31"></p>
+	<p id="z32"></p>
+	<p id="z41"></p>
+	<p id="z42"></p>
+</body>
+</html>
